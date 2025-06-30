@@ -1,0 +1,314 @@
+body {
+    font: 16px Arial, sans-serif;
+    background-color:#0e8b6e; /* Light background for better readability */
+    color:rgb rgba(0, 0, 0, 0.174) ;
+}
+
+.container {
+    background-color:rgb(230, 255, 255); /* Soft green with slight transparency */
+    margin: auto;
+    width: 800px;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.header,ul,li{
+    display: inline-block;
+    margin: 20px;
+}
+
+header, a{
+    text-decoration: none;
+    color: #263238;
+}
+
+.header a:hover {
+    background-color: rgb(6, 85, 55);
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgb(255, 255, 255) ; /* Slightly transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background-image: url(workwithlaptop.jpg);
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Center the image */
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox to align content */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center content vertically */
+    color: #fff; /* Ensure text is white for contrast */
+    position: relative; /* Allow content to be positioned */
+    z-index: 1; /* Ensure hero is behind header */
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #fff; /* White for contrast */
+}
+
+.hero p {
+    font-size: 18px;
+    color: rgba(114, 62, 62, 0.8); /* Light grey for better readability */
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #842002; /* Soft pink */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #000000; /* Darker pink on hover */
+}
+
+.profile-image {
+    width: 200px; /* Ubah lebar gambar sesuai kebutuhan */
+    height: 250px; /* Ubah tinggi gambar sesuai kebutuhan */
+ 
+    object-fit: cover; /* Menjaga proporsi gambar saat mengubah ukuran */
+    margin-bottom: 15px; /* Margin di bawah gambar */
+    border: 3px solid rgba(10, 9, 9, 0.8); /* Border warna pink soft */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lembut di bawah gambar */
+}
+
+.profil {
+    text-align: center; /* Center the text in the profil section */
+    padding: 20px; /* Add some padding */
+}
+
+.profile-card {
+    background-color: #5a705aa2; /* Slightly transparent white for profile card */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgb(249, 248, 248);
+    max-width: 400px; /* Set a max width for the profile card */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.profile-card h3 {
+    color: #064839; /* Soft green for the name */
+    margin-bottom: 15px; /* Margin below name */
+}
+
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table */
+}
+
+.biodata-table td {
+    padding: 10px;
+    border: 1px solid #100f0f; /* Light border for table */
+    background-color: rgba(255, 252, 252, 0.934); /* Light grey background for table cells */
+    border-radius: 5px; /* Rounded corners for table cells */
+    text-align: left; /* Align text to the left within the cells */
+}
+
+.biodata-table td:first-child {
+    font-weight: bold; /* Make the first column bold */
+    color: #064839; /* Soft green for the labels */
+}
+
+h2 {
+    color: #064839; /* Darker soft green */
+}
+
+h3 {
+    color: #064839; /* Darker soft green for subsection headers */
+}
+
+.galeri {
+    background-color: #fcfbfa; /* Sama dengan profil dan beranda */
+    border-radius: 10px; /* Sudut membulat untuk estetika */
+    padding: 20px; /* Padding dalam section */
+    box-shadow: 0 4px 12px rgba(255, 230, 230,); /* Bayangan halus untuk kedalaman */
+    margin: 20px auto; /* Center section */
+    max-width: 800px; /* Lebar maksimum untuk section */
+    text-align: center; /* Teks terpusat */
+}
+
+.galeri body {
+      font-family: sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+}
+
+.gambar1,
+.gambar2,
+.gambar3,
+.gambar4,
+.gambar5,
+.gambar6,
+.gambar7,
+.gambar8,
+.gambar9,
+.gambar10,
+.gambar11,
+.gambar12,
+.gambar13,
+.gambar14,
+.gambar15,
+.gambar16,
+.gambar17,
+.gambar18,
+.gambar19,
+.gambar20 {
+      width: 200px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+}
+
+.preview-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.3s;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+}
+
+.preview-overlay img {
+      max-width: 90%;
+      max-height: 70vh;
+      border-radius: 10px;
+      margin-bottom: 15px;
+}
+
+.preview-description {
+      font-size: 18px;
+      max-width: 90%;
+      text-align: center;
+}
+
+#gambar1Preview,
+#gambar2Preview,
+#gambar3Preview,
+#gambar4Preview,
+#gambar5Preview, 
+#gambar6Preview,
+#gambar7Preview,
+#gambar8Preview,
+#gambar9Preview,
+#gambar10Preview,
+#gambar11Preview, 
+#gambar12Preview,
+#gambar13Preview,
+#gambar14Preview,
+#gambar15Preview,
+#gambar16Preview,
+#gambar17Preview, 
+#gambar18Preview,
+#gambar19Preview,
+#gambar20Preview{
+      display: none;
+}
+
+#gambar1Preview:checked + .preview-overlay,
+#gambar2Preview:checked + .preview-overlay,
+#gambar3Preview:checked + .preview-overlay,
+#gambar4Preview:checked + .preview-overlay,
+#gambar5Preview:checked + .preview-overlay,
+#gambar6Preview:checked + .preview-overlay,
+#gambar7Preview:checked + .preview-overlay,
+#gambar8Preview:checked + .preview-overlay,
+#gambar9Preview:checked + .preview-overlay,
+#gambar10Preview:checked + .preview-overlay,
+#gambar11Preview:checked + .preview-overlay,
+#gambar12Preview:checked + .preview-overlay,
+#gambar13Preview:checked + .preview-overlay,
+#gambar14Preview:checked + .preview-overlay,
+#gambar15Preview:checked + .preview-overlay,
+#gambar16Preview:checked + .preview-overlay,
+#gambar17Preview:checked + .preview-overlay,
+#gambar18Preview:checked + .preview-overlay,
+#gambar19Preview:checked + .preview-overlay,
+#gambar20Preview:checked + .preview-overlay {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+
+.galeri h2 {
+    color: #064839; /* Menggunakan warna header yang sama */
+}
+
+.galeri {
+    display: flex; /* Gunakan flexbox untuk layout media cards */
+    flex-direction: column; /* Susun kartu secara vertikal */
+    align-items: center; /* Pusatkan kartu secara horizontal */
+}
+
+.galeri-card {
+    background-color: white; /* Warna latar belakang sama dengan profil */
+    border-radius: 10px; /* Sudut membulat untuk media card */
+    padding: 15px; /* Padding di dalam media card */
+    margin: 10px 0; /* Margin antara media cards */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk media cards */
+    transition: transform 0.3s; /* Transisi halus untuk efek hover */
+    width: 100%; /* Lebar penuh kartu */
+    max-width: 600px; /* Lebar maksimum untuk media cards */
+}
+
+.artikel h3{
+    margin-left: 10px;
+    color: #064839;
+   
+}
+
+.artikel {
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.artikel p {
+    color: black;
+    margin-left: 10px;
+}
+
+.tentang {
+    background-color: rgb(255, 255, 255);
+    
+}
+.tentang p {
+    line-height: 1.6; /* Better readability */
+    margin-bottom: 10px;
+    color: rgb(8, 8, 8);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(137, 137, 137, 0.388); /* Soft green with transparency */
+    color: white;
+}
